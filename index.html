@@ -3,12 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành Git và GitHub</title>
+    <title>Thực hành Git và GitHub - Nguyễn Ngọc Mai</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Xin chào!</h1>
-    <h2>Nguyễn Ngọc Mai - 1822040747</h2>
-    <p>Đây là trang web thực hành quản lý mã nguồn với Git và GitHub.</p>
+    <div class="background-decorations">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="brand-badge">
+                <span class="git-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M21.62 10.45l-8.07-8.07a2.6 2.6 0 0 0-3.68 0L8.14 4.11l2.58 2.58a2.17 2.17 0 0 1 2.76 2.77l2.49 2.49a2.16 2.16 0 0 1 2.7 2.74l3.15-3.15a2.6 2.6 0 0 0-.2-3.09zm-8.86 5.86a2.17 2.17 0 0 1-2.77-2.76L7.5 11.06a2.16 2.16 0 1 1-2.92-2.92l5.48-5.48a.72.72 0 0 1 1.02 0l8.07 8.07a.72.72 0 0 1 0 1.02l-6.39 6.39v.03z"/>
+                    </svg>
+                </span>
+                <span>Bài Tập Thực Hành Quản Lý Mã Nguồn</span>
+            </div>
+            <h1 class="main-title">Thực Hành Git & GitHub</h1>
+            <p class="subtitle">Trang web báo cáo và minh họa kỹ năng quản lý phiên bản với Git và GitHub</p>
+        </header>
+
+        <!-- Student Profile Card -->
+        <section class="card profile-card">
+            <div class="profile-header">
+                <div class="avatar-wrap">
+                    <div class="avatar">NM</div>
+                    <span class="status-indicator" title="Sẵn sàng"></span>
+                </div>
+                <div class="profile-info">
+                    <div class="name-row">
+                        <h2 class="student-name">Nguyễn Ngọc Mai</h2>
+                        <span class="badge badge-mssv">MSSV: 1822040747</span>
+                    </div>
+                    <p class="student-desc">Sinh viên ngành Công nghệ thông tin</p>
+                    <div class="meta-tags">
+                        <span class="meta-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                            </svg>
+                            Đại học Công nghệ Đồng Nai (DNTU)
+                        </span>
+                        <span class="meta-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                            GitHub: nmaicuti
+                        </span>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <a href="https://github.com/nmaicuti/ThucHanhGit_1822040747" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                        Xem GitHub Repo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Grid -->
+        <div class="grid-layout">
+            <!-- Left Column: Workflow steps -->
+            <div class="grid-col">
+                <section class="card">
+                    <div class="card-header">
+                        <div class="icon-bubble orange">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="18" r="3"></circle>
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                                <line x1="6" y1="9" x2="6" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Quy Trình Thực Hành Đã Thực Hiện</h3>
+                            <p class="card-subtitle">Các bước hoàn thành trong bài tập Git & GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item done">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="step-num">Bước 01</span>
+                                <h4>Khởi tạo kho chứa & cấu trúc dự án</h4>
+                                <p>Tạo repository trên GitHub, khởi tạo tệp <code>index.html</code> và <code>README.md</code> với thông tin sinh viên.</p>
+                                <span class="tag-commit">Commit: 4478ff1</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item done">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="step-num">Bước 02</span>
+                                <h4>Tạo nhánh tính năng (Feature Branch)</h4>
+                                <p>Tạo và chuyển sang branch <code>feature/them-giao-dien</code> để xây dựng tệp định dạng <code>style.css</code> cho trang web.</p>
+                                <span class="tag-branch">Branch: feature/them-giao-dien</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item done">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="step-num">Bước 03</span>
+                                <h4>Tạo Pull Request & Hợp nhất mã nguồn</h4>
+                                <p>Tạo Pull Request #1 từ nhánh tính năng vào nhánh <code>main</code> và tiến hành hợp nhất (merge) thành công.</p>
+                                <span class="tag-pr">PR #1: Merged into main</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item done">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="step-num">Bước 04</span>
+                                <h4>Tối ưu hóa và hiện đại hóa giao diện</h4>
+                                <p>Nâng cấp giao diện người dùng theo phong cách hiện đại, responsive, trực quan và chuyên nghiệp.</p>
+                                <span class="tag-new">Phiên bản giao diện mới</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Git Cheatsheet & Skills -->
+            <div class="grid-col">
+                <section class="card">
+                    <div class="card-header">
+                        <div class="icon-bubble blue">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Các Lệnh Git Cơ Bản Đã Áp Dụng</h3>
+                            <p class="card-subtitle">Cú pháp và thao tác quản trị mã nguồn</p>
+                        </div>
+                    </div>
+
+                    <div class="terminal-block">
+                        <div class="terminal-header">
+                            <span class="btn-dot red"></span>
+                            <span class="btn-dot yellow"></span>
+                            <span class="btn-dot green"></span>
+                            <span class="terminal-title">git-bash ~ /ThucHanhGit_1822040747</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git clone</span>
+                                <span class="arg">https://github.com/nmaicuti/ThucHanhGit_1822040747.git</span>
+                            </div>
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git checkout -b</span>
+                                <span class="arg">feature/them-giao-dien</span>
+                            </div>
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git add</span>
+                                <span class="arg">.</span>
+                            </div>
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git commit -m</span>
+                                <span class="str">"Add CSS giao diện cho trang web"</span>
+                            </div>
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git push origin</span>
+                                <span class="arg">feature/them-giao-dien</span>
+                            </div>
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="cmd">git merge</span>
+                                <span class="arg">feature/them-giao-dien</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-pills">
+                        <div class="pill">
+                            <span class="pill-icon">🌿</span>
+                            <span class="pill-text">Nhánh (Branching)</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-icon">🔀</span>
+                            <span class="pill-text">Hợp nhất (Merging)</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-icon">📦</span>
+                            <span class="pill-text">Kho lưu trữ (Repository)</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-icon">🔍</span>
+                            <span class="pill-text">Kiểm soát phiên bản</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 <strong>Nguyễn Ngọc Mai</strong> (1822040747) • Khoa CNTT - Trường Đại học Công nghệ Đồng Nai</p>
+            <p class="footer-note">Dự án thực hành quản lý mã nguồn Git và GitHub</p>
+        </footer>
+    </div>
 </body>
 </html>
